@@ -352,10 +352,12 @@ submitBtn.addEventListener('click', async function (ev) {
             recycleBinID: binId
         }
         addActivityToUser(activity, userId);
-        $('#content-close').click();
+        
     }
     else {
     }
+
+    $('#content-close').click();
     ev.preventDefault();
 })
 

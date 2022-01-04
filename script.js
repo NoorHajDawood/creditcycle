@@ -351,10 +351,7 @@ submitBtn.addEventListener('click', async function (ev) {
             dateTime: new Date().toString(),
             recycleBinID: binId
         }
-        addActivityToUser(activity, userId);
-        
-    }
-    else {
+        // addActivityToUser(activity, userId);
     }
 
     $('#content-close').click();

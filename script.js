@@ -351,9 +351,11 @@ submitBtn.addEventListener('click', async function (ev) {
             dateTime: new Date().toString(),
             recycleBinID: binId
         }
-        const mybin = await getRecycleBin(binId);
+        addActivityToUser(activity, userId);
+        $('#content-close').click();
     }
-
+    else {
+    }
     ev.preventDefault();
 })
 

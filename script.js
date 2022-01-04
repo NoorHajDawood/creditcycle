@@ -342,35 +342,18 @@ function resetSubmitFields() {
 }
 
 submitBtn.addEventListener('click', async function (ev) {
-    const itemAmount = parseInt(document.querySelector('#item-amount').value);
-    const typesSelect = document.querySelector('#item-types');
-    const imgUrl = cameraPhoto.getAttribute('src');
     const binId = $('#recycle-bin-id').val();
 
-    if (itemAmount && itemAmount > 0 && imgUrl && binId) {
+    if (binId) {
         const selected = typesSelect.options[typesSelect.selectedIndex]
         const activity = {
             imgUrl,
             dateTime: new Date().toString(),
-            recycleBinID: binId,
-            items: [{
-                itemId: selected.getAttribute('item-id'),
-                quantity: itemAmount
-            }]
+            recycleBinID: binId
         }
         const mybin = await getRecycleBin(binId);
-        if ((mybin.currentCapacity + (itemAmount * selected.getAttribute('size'))) <= mybin.maxCapacity) {
-            addActivityToUser(activity, userId);
-            $('#content-close').click();
-        }
-        else {
-            alert('Recycle bin is Full!')
+    }
 
-        }
-    }
-    else {
-        alert('wrong info!')
-    }
     ev.preventDefault();
 })
 

@@ -1,0 +1,140 @@
+html {
+    height: 100%;
+    box-sizing: border-box;
+    font-size: 100%;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #1D1F20;
+}
+
+#map {
+    height: 100%;
+}
+
+.gm-style-cc { display:none; }
+
+#content {
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    z-index: 2;
+    display: none;
+    grid-template-columns: repeat(10, 10% [col-start]);
+    grid-template-rows: repeat(10, 10% [row-start]);
+    background-color: #F9FBFA;
+    padding: 10px;
+}
+
+#bin-img {
+    max-width: 40%;
+    height: auto;
+    display: block;
+}
+
+.btn-circle {
+    height: 60px;
+    line-height: 65px;  
+    width: 60px;  
+    font-size: 3em;
+    font-weight: bold;
+    border-radius: 50%;
+    background-color: #1D1F20;
+    color: #F9FBFA;
+    text-align: center;
+    cursor: pointer;
+}
+
+#plus-btn {
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+    z-index: 1;
+}
+
+#pan-btn {
+    position: absolute;
+    right: 5px;
+    bottom: 70px;
+    z-index: 1;
+    background-image: url(./images/icons/location.png);
+    background-position: center;
+    background-size: cover;
+}
+
+#submit-wrapper, #camera-wrapper {
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    overflow: hidden;
+    display: none;
+    top: 0;
+    left: 0;
+}  
+#submit-wrapper {
+    z-index: 2;
+    background-color: #F9FBFA;
+    padding: 50px 10px;
+}
+#camera-wrapper {
+    z-index: 5;
+    background-color: #1D1F20;
+}
+
+#canvas {
+    position: absolute;
+    z-index: 5;
+}
+
+#video {
+    width: 100%;
+    height: auto;
+    z-index: 5;
+}
+
+#content-close {
+    position: relative;
+    z-index: 10;
+    background-color: #f9fbfa50;
+    font-size: 20px;
+    top: 5px;
+    left: 5px;
+}
+
+#capture-btn {
+    display: none;
+}
+
+#camera-output {
+    position: absolute;
+    display: none;
+}
+
+#delete-photo {
+    position: relative;
+    float: right;
+    background: red;
+	color: white;
+    font-size: 25px;
+    top: 0px;
+    right: 0px;
+}
+
+#submit-btn {
+    position: absolute;
+    bottom: 100px;
+  }
+
+  #amount-select  {
+      display: none;
+  }

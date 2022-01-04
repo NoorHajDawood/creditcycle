@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Green Points</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/@googlemaps/markerclusterer/dist/index.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="content">
+        <button id="content-close" type="button" class="btn-close" aria-label="Close"></button>
+        <div id="submit-wrapper">
+            <button id="start-qr" type="button" class="btn btn-secondary">Scan QR Code</button>
+            <label>Recycle bin ID: </label>
+            <input id="recycle-bin-id" type="text" class="form-control" placeholder="scan QR code for bin id" disabled>
+            <div id="amount-select">
+                <div id="recycle-bin-type"></div>
+                <button id="start-camera" type="button" class="btn btn-secondary">Take a Picture</button>
+                <label>Type: </label>
+                <select name="item-types" id="item-types"></select>
+                <input id="item-amount" type="number" min="0" max="100" class="form-control" placeholder="amount"
+                    aria-label="" aria-describedby="basic-addon1">
+            </div>
+            <div id="camera-wrapper">
+                <canvas id="canvas" width="640" height="480"></canvas>
+                <video id="video" autoplay></video>
+                <button id="capture-btn" class="btn-circle"></button>
+            </div>
+            <div id="camera-output">
+                <img id="camera-photo" alt="The screen capture will appear in this box.">
+                <button id="delete-photo">x</button>
+            </div>
+            <button id="submit-btn" class="btn btn-success">Submit</button>
+        </div>
+    </div>
+    <div id="plus-btn" class="btn-circle">+</div>
+    <div id="pan-btn" class="btn-circle"></div>
+
+    <div id="map"></div>
+
+    <script src="script.js"></script>
+    <script async
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAT5yEpu5gIzZyhb0252fC1eWd7zzUHJZY&map_id=f0ee40db14646c1b&callback=initMap"></script>
+</body>
+
+</html>

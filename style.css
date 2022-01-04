@@ -182,3 +182,7 @@ body {
 .p-4 img{
     border-radius: 50%;
 }
+
+#submit-btn{
+margin-top: 30px;
+}

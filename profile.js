@@ -33,3 +33,9 @@ $("#shoplist-button").click(function() {
     $("#shops").show();
     $("#title").text("Shops List");
 });
+
+
+$("#history").click(function() {
+    window.location.href = "./task3/UserHistory.html"
+
+});

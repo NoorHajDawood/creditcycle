@@ -1,28 +1,61 @@
-const stores = require('../Data/stores.json');
+const stores = [
+    {
+        "_id": 1,
+        "name": "Renuar",
+        "discountPercentage": "10",
+        "expiryDate": "20.1.2022",
+        "type": "clothing",
+        "address": "אלון עין שמר, Pardes Hanna-Karkur"
+    }
+];
 
 
-document.getElementById("storeInfo").onclick = function() {dialog.show();}
-document.getElementById("close").onclick = function() {dialog.hide();}
+function liClick(dialog) { dialog.show(); }
 
-function createListItems() {
-    let len = stores.length;
-    for (let i=0; i<len; i++){
+
+function createListItems(storesList) {
+
+    const ul = document.getElementById("storesList"); 
+    
+    stores.forEach((store) => {
         let li = document.createElement('li');
-        li.class = 'listItem';
-
+        ul.appendChild(li);
+        li.setAttribute('class', 'listItem');
+    
         let dialog = document.createElement('dialog');
-        li.appendChile(dialog);
-
+        li.appendChild(dialog);
+    
         let closeButton = document.createElement('button');
-        dialog.appendchile(closeButton);
-        
-
+        dialog.appendChild(closeButton);
+        closeButton.setAttribute('class', 'closeDialog');
+    
         let storeInfo = document.createElement('div');
         dialog.appendChild(storeInfo);
-
-    }
+    
+        let storeName = document.createElement('p');
+        storeInfo.appendChild(storeName);
+        storeName.innerText = store.name;
+    
+        let storeDiscountPerc = document.createElement('p');
+        storeInfo.appendChild(storeDiscountPerc);
+        storeDiscountPerc.innerText = 'Discount of ' + store.discountPercentage + '%';
+    
+        let expiryDate = document.createElement('p');
+        storeInfo.appendChild(expiryDate);
+        expiryDate.innerText = store.expiryDate;
+    
+        let storeType = document.createElement('p');
+        storeInfo.appendChild(storeType);
+        storeType.innerText = store.type;
+    
+        let storeAddress = document.createElement('p');
+        storeInfo.appendChild(storeAddress);
+        storeAddress.innerText = store.address;
+        
+        li.onclick = liClick(dialog);
+        
+    });
 }
-document.getElementById("name").innerHTML("Discount in: "+stores[0].name)
-document.getElementById("discountPerc").innerHTML("Discount by "+stores[0].discountPercentage)
 
+createListItems('storesList');
 

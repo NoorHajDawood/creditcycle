@@ -325,11 +325,11 @@ captureButton.addEventListener('click', function (ev) {
     ev.preventDefault();
 }, false);
 
-deletePhoto.addEventListener('click', function (ev) {
-    $('#camera-output').hide();
-    cameraPhoto.removeAttribute('src');
-    ev.preventDefault();
-}, false);
+// deletePhoto.addEventListener('click', function (ev) {
+//     $('#camera-output').hide();
+//     cameraPhoto.removeAttribute('src');
+//     ev.preventDefault();
+// }, false);
 
 function resetSubmitFields() {
     document.querySelector('#item-amount').value = 0;

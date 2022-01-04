@@ -344,15 +344,15 @@ function resetSubmitFields() {
 submitBtn.addEventListener('click', async function (ev) {
     const binId = $('#recycle-bin-id').val();
 
-    if (binId) {
-        const selected = typesSelect.options[typesSelect.selectedIndex]
-        const activity = {
-            imgUrl,
-            dateTime: new Date().toString(),
-            recycleBinID: binId
-        }
-        // addActivityToUser(activity, userId);
-    }
+    // if (binId) {
+    //     const selected = typesSelect.options[typesSelect.selectedIndex]
+    //     const activity = {
+    //         imgUrl,
+    //         dateTime: new Date().toString(),
+    //         recycleBinID: binId
+    //     }
+    //     // addActivityToUser(activity, userId);
+    // }
 
     $('#content-close').click();
     ev.preventDefault();

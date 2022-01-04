@@ -1,0 +1,10 @@
+[
+    {
+        "_id": 1,
+        "name": "Renuar",
+        "discountPercentage": 10,
+        "expiryDate": "20.1.2022",
+        "type": "clothing",
+        "address": "אלון עין שמר, Pardes Hanna-Karkur"
+    }
+]

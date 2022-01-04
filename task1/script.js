@@ -72,7 +72,7 @@ const binDict = {
         icon: iconBase + "location.png",
     },
 };
-console.info('All rights saced to CrediCycle')
+
 function getUser(id) {
     return new Promise((resolve, reject) => {
         $.ajax({
@@ -178,11 +178,6 @@ function markBinsOnMap() {
             map,
             animation: google.maps.Animation.DROP,
         });
-
-        marker.addListener("click", () => {
-            window.location.href = "/task6/binDetails.html";
-          });
-
         return marker;
     });
 
@@ -396,6 +391,3 @@ async function updateTypesSelect(binId) {
 
     $('#amount-select').show();
 }
-$('#profile').click(function() {
-    window.location.href = "./profilepage.html";
-});

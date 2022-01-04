@@ -1,0 +1,169 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.card {
+    width: 350px;
+    background-color: #efefef;
+    border: none;
+    cursor: pointer;
+    margin-top:30px;
+    transition: all 0.5s;
+}
+
+.image img {
+    transition: all 0.5s
+}
+
+.card:hover .image img {
+    transform: scale(1.5)
+}
+
+.btn {
+    height: 140px;
+    width: 140px;
+    border-radius: 50%
+}
+
+.name {
+    font-size: 22px;
+    font-weight: bold
+}
+
+.idd {
+    font-size: 14px;
+    font-weight: 600
+}
+
+.idd1 {
+    font-size: 12px
+}
+
+.number {
+    font-size: 22px;
+    font-weight: bold
+}
+
+.follow {
+    font-size: 12px;
+    font-weight: 500;
+    color: #444444
+}
+
+.btn1 {
+    height: 40px;
+    width: 150px;
+    border: none;
+    background-color: #000;
+    color: #aeaeae;
+    font-size: 15px
+}
+
+.text span {
+    font-size: 13px;
+    color: #545454;
+    font-weight: 500
+}
+
+.icons i {
+    font-size: 19px
+}
+
+hr .new1 {
+    border: 1px solid
+}
+
+.join {
+    font-size: 14px;
+    color: #a0a0a0;
+    font-weight: bold
+}
+
+.date {
+    background-color: #ccc
+}
+
+#back-button{
+    background-image: url("./images/left.png");
+    display: block;
+    float :left;
+    width: 32px;
+    height: 32px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: 6;
+    margin-top:7px;
+    margin-left:20px;
+}
+
+.user-header h4{
+    text-align: center;
+    margin-top:10px;
+}
+
+.user-header
+{
+    position: absolute;
+    top:0;
+    height: 50px;
+    z-index: 5;
+    width: 100%;
+    background-color: whitesmoke;
+}
+#logo
+{
+    background-image: url("./images/logo.png");
+    display: block;
+    float :left;
+    width: 80px;
+    height: 60px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: 6;
+    margin-top:7px;
+    margin-left:20px;
+
+}
+#profile{
+    float:right;
+    display: block;
+    width: 32px;
+    height: 32px;
+    background-image: url("./images/user.png");
+    z-index: 6;
+    margin-right: 20px;
+    margin-top: 7px;
+  
+
+}
+.coupon, .shop {
+    border: 5px dotted #bbb; /* Dotted border */
+    width: 80%;
+    border-radius: 15px; /* Rounded border */
+    margin: 0 auto; /* Center the coupon */
+    max-width: 600px;
+  }
+  
+  .coupon-container, .shop-container {
+    padding: 2px 16px;
+    background-color: #f1f1f1;
+  }
+  
+  .promo {
+    background: #ccc;
+    padding: 3px;
+  }
+  
+  .expire {
+    color: red;
+  }
+.hidden
+{
+    display: none !important;
+}
+#coupons, #shops
+{
+    overflow: scroll;
+    margin-top:80px;
+}

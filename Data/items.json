@@ -1,0 +1,106 @@
+[
+    {
+        "_id": {
+            "$oid": "61c1a7c0d69322a6a88b26cf"
+        },
+        "type": "plastic",
+        "name": "Bottle L",
+        "size": {
+            "$numberInt": "2"
+        },
+        "__v": {
+            "$numberInt": "0"
+        }
+    },
+    {
+        "_id": {
+            "$oid": "61c1a7c7d69322a6a88b26d1"
+        },
+        "type": "plastic",
+        "name": "Bottle S",
+        "size": {
+            "$numberInt": "1"
+        },
+        "__v": {
+            "$numberInt": "0"
+        }
+    },
+    {
+        "_id": {
+            "$oid": "61c1a7dfd69322a6a88b26d3"
+        },
+        "type": "glass",
+        "name": "Bottle S",
+        "size": {
+            "$numberInt": "1"
+        },
+        "__v": {
+            "$numberInt": "0"
+        }
+    },
+    {
+        "_id": {
+            "$oid": "61c1a7e2d69322a6a88b26d5"
+        },
+        "type": "glass",
+        "name": "Bottle L",
+        "size": {
+            "$numberInt": "2"
+        },
+        "__v": {
+            "$numberInt": "0"
+        }
+    },
+    {
+        "_id": {
+            "$oid": "61c1a83ad69322a6a88b26d8"
+        },
+        "type": "paper",
+        "name": "Large",
+        "size": {
+            "$numberInt": "2"
+        },
+        "__v": {
+            "$numberInt": "0"
+        }
+    },
+    {
+        "_id": {
+            "$oid": "61c1a841d69322a6a88b26da"
+        },
+        "type": "paper",
+        "name": "Small",
+        "size": {
+            "$numberInt": "1"
+        },
+        "__v": {
+            "$numberInt": "0"
+        }
+    },
+    {
+        "_id": {
+            "$oid": "61c1a847d69322a6a88b26dc"
+        },
+        "type": "can",
+        "name": "Small",
+        "size": {
+            "$numberInt": "1"
+        },
+        "__v": {
+            "$numberInt": "0"
+        }
+    },
+    {
+        "_id": {
+            "$oid": "61c1a84cd69322a6a88b26de"
+        },
+        "type": "can",
+        "name": "Large",
+        "size": {
+            "$numberInt": "2"
+        },
+        "__v": {
+            "$numberInt": "0"
+        }
+    }
+]

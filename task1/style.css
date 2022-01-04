@@ -130,49 +130,12 @@ body {
     right: 0px;
 }
 
-/* #submit-btn {
+#submit-btn {
     position: absolute;
     bottom: 100px;
-  } */
+  }
 
   #amount-select  {
       display: none;
   }
 
-
-/* t1 */
-.user-header
-{
-    position: absolute;
-    top:0;
-    height: 50px;
-    z-index: 5;
-    width: 100%;
-    background-color: whitesmoke;
-}
-#logo
-{
-    background-image: url("./images/logo.png");
-    display: block;
-    float :left;
-    width: 80px;
-    height: 60px;
-    background-repeat: no-repeat;
-    background-size: contain;
-    z-index: 6;
-    margin-top:7px;
-    margin-left:20px;
-
-}
-#profile{
-    float:right;
-    display: block;
-    width: 32px;
-    height: 32px;
-    background-image: url("./images/user.png");
-    z-index: 6;
-    margin-right: 20px;
-    margin-top: 7px;
-  
-
-}

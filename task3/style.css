@@ -1,0 +1,38 @@
+
+.t6-header {
+    background-color: whitesmoke;
+    display: grid;
+    height: 50px;
+}
+
+.t6-back {
+    position: absolute;
+    top: 0px;
+    left: 10px;
+    border: none;
+    border-radius: 50%;
+    background-color: whitesmoke;
+    width: 40px;
+    height: 40px;
+    font-size: 40px;
+    line-height: 50px;
+}
+
+.t6-header > h4 {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+body {
+    background-color: white;
+    color: black;
+}

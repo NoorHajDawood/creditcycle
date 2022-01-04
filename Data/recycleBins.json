@@ -1,0 +1,106 @@
+[
+    {
+        "_id": {
+            "$oid": "61c187a6ab8730e3df7a3348"
+        },
+        "type": "plastic",
+        "location": {
+            "lng": {
+                "$numberDouble": "34.80317547458683"
+            },
+            "lat": {
+                "$numberDouble": "32.08938856151897"
+            },
+            "_id": {
+                "$oid": "61c187a6ab8730e3df7a3349"
+            }
+        },
+        "maxCapacity": {
+            "$numberInt": "250"
+        },
+        "currentCapacity": {
+            "$numberInt": "0"
+        },
+        "__v": {
+            "$numberInt": "0"
+        }
+    },
+    {
+        "_id": {
+            "$oid": "61c187ffab8730e3df7a334d"
+        },
+        "type": "glass",
+        "location": {
+            "lng": {
+                "$numberDouble": "34.80441146662424"
+            },
+            "lat": {
+                "$numberDouble": "32.09015290690907"
+            },
+            "_id": {
+                "$oid": "61c187ffab8730e3df7a334e"
+            }
+        },
+        "maxCapacity": {
+            "$numberInt": "250"
+        },
+        "currentCapacity": {
+            "$numberInt": "0"
+        },
+        "__v": {
+            "$numberInt": "0"
+        }
+    },
+    {
+        "_id": {
+            "$oid": "61c1881cab8730e3df7a3350"
+        },
+        "type": "organic",
+        "location": {
+            "lng": {
+                "$numberDouble": "34.80357243553262"
+            },
+            "lat": {
+                "$numberDouble": "32.08722542941173"
+            },
+            "_id": {
+                "$oid": "61c1881cab8730e3df7a3351"
+            }
+        },
+        "maxCapacity": {
+            "$numberInt": "250"
+        },
+        "currentCapacity": {
+            "$numberInt": "0"
+        },
+        "__v": {
+            "$numberInt": "0"
+        }
+    },
+    {
+        "_id": {
+            "$oid": "61c193d267c2cf959cc55970"
+        },
+        "type": "paper",
+        "location": {
+            "lat": {
+                "$numberDouble": "32.09013762006465"
+            },
+            "lng": {
+                "$numberDouble": "34.803689719448656"
+            },
+            "_id": {
+                "$oid": "61c193d267c2cf959cc55971"
+            }
+        },
+        "maxCapacity": {
+            "$numberInt": "500"
+        },
+        "currentCapacity": {
+            "$numberInt": "0"
+        },
+        "__v": {
+            "$numberInt": "0"
+        }
+    }
+]

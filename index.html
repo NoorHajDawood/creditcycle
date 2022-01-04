@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Green Points</title>
+    <title>CrediCycle</title>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/@googlemaps/markerclusterer/dist/index.min.js"></script>
@@ -79,25 +79,27 @@
                     </div>
                 </div>-->
 
-                <div class="container mt-4 mb-4 p-3 d-flex justify-content-center">
-                    <div class="card p-4">
-                        <div class=" image d-flex flex-column justify-content-center align-items-center"> <button class="btn btn-secondary"> <img src="./images/recycling.png" height="100" width="100" /></button> <span class="name mt-3">Recycle</span>
-                           
-                            <button id="start-qr" type="button" class="btn1 btn-dark">Scan QR Code</button>
-                            <div class="text mt-3"> <span>Recycle bin ID: </span> </div>
-                            <input id="recycle-bin-id" type="text" class="form-control" placeholder="scan QR code for bin id" disabled>
-                            <div id="camera-wrapper">
-                                <canvas id="canvas" width="640" height="480"></canvas>
-                                <video id="video" autoplay></video>
-                                <button id="capture-btn" class="btn-circle"></button>
-                            </div>
-                            <button id="submit-btn" class="btn1 btn-dark">Submit</button>
-                        </div>
-                    </div>
-                </div> 
+            <div class="container mt-4 mb-4 p-3 d-flex justify-content-center">
+                <div class="card p-4">
+                    <div class="image d-flex flex-column justify-content-center align-items-center">
+                        <img src="./images/recycling.png" height="100" width="100"  />
+                        <span class="name mt-3">Recycle</span>
 
+                        <button id="start-qr" type="button" class="btn1 btn-dark">Scan QR Code</button>
+                        <input id="recycle-bin-id" type="hidden" class="form-control"
+                            placeholder="scan QR code for bin id" disabled>
+                        <div id="camera-wrapper">
+                            <canvas id="canvas" width="640" height="480"></canvas>
+                            <video id="video" autoplay></video>
+                            <button id="capture-btn" class="btn-circle"></button>
+                        </div>
+                        <button id="submit-btn" class="btn1 btn-dark" style="display: none;">Submit</button>
+                    </div>
+                </div>
             </div>
+
         </div>
+    </div>
 
     </div>
     <div id="plus-btn" class="btn-circle">+</div>

@@ -252,6 +252,8 @@ function startQRScan() {
                     $('#recycle-bin-id').val(barcode.rawValue);
                     stopQRScan();
                     updateTypesSelect(barcode.rawValue);
+                    $("submit-btn").show();
+                    
                 }
             }).catch(err => {
                 console.error(err);
@@ -315,6 +317,7 @@ panBtn.addEventListener("click", () => {
 plusBtn.addEventListener("click", () => {
     $('#submit-wrapper').show();
     $('#content').show();
+    $("#submit-btn").hide();
 });
 
 captureButton.addEventListener('click', function (ev) {

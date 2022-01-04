@@ -24,6 +24,7 @@ function createListItems(storesList) {
     
         let dialog = document.createElement('dialog');
         li.appendChild(dialog);
+        dialog.close();
     
         let closeButton = document.createElement('button');
         dialog.appendChild(closeButton);
@@ -42,7 +43,7 @@ function createListItems(storesList) {
     
         let expiryDate = document.createElement('p');
         storeInfo.appendChild(expiryDate);
-        expiryDate.innerText = store.expiryDate;
+        expiryDate.innerText = 'Discount expires on ' + store.expiryDate;
     
         let storeType = document.createElement('p');
         storeInfo.appendChild(storeType);
@@ -50,7 +51,7 @@ function createListItems(storesList) {
     
         let storeAddress = document.createElement('p');
         storeInfo.appendChild(storeAddress);
-        storeAddress.innerText = store.address;
+        storeAddress.innerText = 'Store address: ' + store.address;
         
         li.onclick = liClick(dialog);
         

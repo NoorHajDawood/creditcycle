@@ -180,7 +180,7 @@ function markBinsOnMap() {
         });
 
         marker.addListener("click", () => {
-            window.location.href = "/task6/binDetails.html";
+            window.location.href = `/task6/binDetails${bin.type}.html`;
           });
 
         return marker;

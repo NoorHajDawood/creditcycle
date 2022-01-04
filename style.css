@@ -134,7 +134,9 @@ body {
     position: absolute;
     bottom: 100px;
   } */
-
+#submit-btn {
+    display: none;
+}
   #amount-select  {
       display: none;
   }

@@ -252,7 +252,7 @@ function startQRScan() {
                     $('#recycle-bin-id').val(barcode.rawValue);
                     stopQRScan();
                     updateTypesSelect(barcode.rawValue);
-                    $("submit-btn").show();
+                    $("#submit-btn").show();
                     
                 }
             }).catch(err => {

@@ -1,4 +1,4 @@
-# GreenPoints-frontend
+# CreditCycle
 
 this project was worked on in Ramat Gan Municipality's Innovation Exchange hackathon 2022.
 
